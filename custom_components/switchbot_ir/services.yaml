@@ -1,0 +1,33 @@
+send:
+  name: Send IR command
+  description: SwitchBotクラウド経由で、赤外線リモコンのボタン(コマンド)を送信します。
+  fields:
+    device_id:
+      name: Device ID
+      description: 赤外線リモコン(仮想デバイス)のID
+      required: true
+      example: "01-202201010000-00000000"
+      selector:
+        text:
+    command:
+      name: Command
+      description: カスタムボタンの名前、または標準コマンド名(turnOn など)
+      required: true
+      example: "電源"
+      selector:
+        text:
+    command_type:
+      name: Command type
+      description: customize=SwitchBotアプリで学習させたボタン / command=標準コマンド
+      default: customize
+      selector:
+        select:
+          options:
+            - customize
+            - command
+    parameter:
+      name: Parameter
+      description: 標準コマンドのパラメータ(setAllなど)。カスタムボタンでは不要
+      default: default
+      selector:
+        text:

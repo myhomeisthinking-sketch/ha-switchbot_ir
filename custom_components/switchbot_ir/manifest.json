@@ -1,0 +1,14 @@
+{
+  "domain": "switchbot_ir",
+  "name": "SwitchBot IR",
+  "codeowners": ["@myhomeisthinking-sketch"],
+  "config_flow": true,
+  "dependencies": ["http", "frontend", "panel_custom"],
+  "documentation": "https://github.com/myhomeisthinking-sketch/ha-switchbot_ir",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/myhomeisthinking-sketch/ha-switchbot_ir/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "1.0.0"
+}

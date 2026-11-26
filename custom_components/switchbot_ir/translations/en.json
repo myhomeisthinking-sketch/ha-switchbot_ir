@@ -1,0 +1,6 @@
+{
+  "config": {
+    "step": {"user": {"title": "SwitchBot IR", "description": "Adds a panel to manage SwitchBot cloud infrared remote buttons as button entities. Enter the token and secret in the sidebar panel after setup."}},
+    "abort": {"single_instance_allowed": "Only one SwitchBot IR instance can be added."}
+  }
+}
